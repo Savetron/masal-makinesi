@@ -1,0 +1,631 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.xctest/Contents/MacOS/MasalMakinesiPackageTests",
+      "packagePath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios",
+      "productName" : "MasalMakinesiPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.MasalMakinesi-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/sources",
+      "importPath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Authentication/AuthenticationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/MasalMakinesi.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Models/StoryModels.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Networking/APIClient.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Networking/NetworkManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MasalMakinesi",
+      "moduleOutputPath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/Modules/MasalMakinesi.swiftmodule",
+      "objects" : [
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/AuthenticationManager.swift.o",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/MasalMakinesi.swift.o",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/StoryModels.swift.o",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/APIClient.swift.o",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/NetworkManager.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/MasalMakinesi-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-enable-upcoming-feature",
+        "BareSlashRegexLiterals",
+        "-enable-upcoming-feature",
+        "ConciseMagicFile",
+        "-enable-upcoming-feature",
+        "ExistentialAny",
+        "-enable-upcoming-feature",
+        "ForwardTrailingClosures",
+        "-enable-upcoming-feature",
+        "ImplicitOpenExistentials",
+        "-enable-upcoming-feature",
+        "StrictConcurrency",
+        "-F",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "ios"
+      ],
+      "outputFileMapPath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/AuthenticationManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/MasalMakinesi.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/StoryModels.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/APIClient.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/NetworkManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/Modules/MasalMakinesi.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Authentication/AuthenticationManager.swift",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/MasalMakinesi.swift",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Models/StoryModels.swift",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Networking/APIClient.swift",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Networking/NetworkManager.swift"
+      ],
+      "tempsPath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.MasalMakinesiPackageTests-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.build/sources",
+      "importPath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/Modules/MasalMakinesiTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MasalMakinesiPackageTests",
+      "moduleOutputPath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/Modules/MasalMakinesiPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.build/MasalMakinesiPackageTests-Swift.h",
+        "-color-diagnostics",
+        "-F",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "ios"
+      ],
+      "outputFileMapPath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/Modules/MasalMakinesiPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.MasalMakinesiTests-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiTests.build/sources",
+      "importPath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Tests/MasalMakinesiTests/MasalMakinesiTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/Modules/MasalMakinesi.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MasalMakinesiTests",
+      "moduleOutputPath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/Modules/MasalMakinesiTests.swiftmodule",
+      "objects" : [
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiTests.build/MasalMakinesiTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-F",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "ios"
+      ],
+      "outputFileMapPath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiTests.build/MasalMakinesiTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/Modules/MasalMakinesiTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Tests/MasalMakinesiTests/MasalMakinesiTests.swift"
+      ],
+      "tempsPath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "MasalMakinesi" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "MasalMakinesi",
+      "-package-name",
+      "ios",
+      "-incremental",
+      "-c",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Authentication/AuthenticationManager.swift",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/MasalMakinesi.swift",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Models/StoryModels.swift",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Networking/APIClient.swift",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Networking/NetworkManager.swift",
+      "-I",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/MasalMakinesi-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-enable-upcoming-feature",
+      "BareSlashRegexLiterals",
+      "-enable-upcoming-feature",
+      "ConciseMagicFile",
+      "-enable-upcoming-feature",
+      "ExistentialAny",
+      "-enable-upcoming-feature",
+      "ForwardTrailingClosures",
+      "-enable-upcoming-feature",
+      "ImplicitOpenExistentials",
+      "-enable-upcoming-feature",
+      "StrictConcurrency",
+      "-F",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "ios",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "MasalMakinesiPackageTests" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "MasalMakinesiPackageTests",
+      "-package-name",
+      "ios",
+      "-incremental",
+      "-c",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.build/MasalMakinesiPackageTests-Swift.h",
+      "-color-diagnostics",
+      "-F",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "ios",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "MasalMakinesiTests" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "MasalMakinesiTests",
+      "-package-name",
+      "ios",
+      "-incremental",
+      "-c",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Tests/MasalMakinesiTests/MasalMakinesiTests.swift",
+      "-I",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-F",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "ios",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "MasalMakinesi" : [
+
+    ],
+    "MasalMakinesiPackageTests" : [
+      "MasalMakinesiTests",
+      "MasalMakinesi"
+    ],
+    "MasalMakinesiTests" : [
+      "MasalMakinesi"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Authentication/AuthenticationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/MasalMakinesi.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Models/StoryModels.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Networking/APIClient.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Networking/NetworkManager.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/sources"
+    },
+    "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.build/sources"
+    },
+    "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/APIClient.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/AuthenticationManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/MasalMakinesi.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/NetworkManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/StoryModels.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiTests.build/MasalMakinesiTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Tests/MasalMakinesiTests/MasalMakinesiTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiTests.build/sources"
+    },
+    "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}

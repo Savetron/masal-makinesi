@@ -1,0 +1,4 @@
+module MasalMakinesi {
+    header "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/MasalMakinesi-Swift.h"
+    requires objc
+}

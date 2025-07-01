@@ -1,0 +1,35 @@
+{
+  "": {
+    "swift-dependencies": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/master.swiftdeps"
+  },
+  "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Authentication/AuthenticationManager.swift": {
+    "dependencies": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/AuthenticationManager.d",
+    "object": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/AuthenticationManager.swift.o",
+    "swiftmodule": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/AuthenticationManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/AuthenticationManager.swiftdeps"
+  },
+  "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/MasalMakinesi.swift": {
+    "dependencies": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/MasalMakinesi.d",
+    "object": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/MasalMakinesi.swift.o",
+    "swiftmodule": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/MasalMakinesi~partial.swiftmodule",
+    "swift-dependencies": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/MasalMakinesi.swiftdeps"
+  },
+  "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Models/StoryModels.swift": {
+    "dependencies": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/StoryModels.d",
+    "object": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/StoryModels.swift.o",
+    "swiftmodule": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/StoryModels~partial.swiftmodule",
+    "swift-dependencies": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/StoryModels.swiftdeps"
+  },
+  "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Networking/APIClient.swift": {
+    "dependencies": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/APIClient.d",
+    "object": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/APIClient.swift.o",
+    "swiftmodule": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/APIClient~partial.swiftmodule",
+    "swift-dependencies": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/APIClient.swiftdeps"
+  },
+  "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Sources/MasalMakinesi/Networking/NetworkManager.swift": {
+    "dependencies": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/NetworkManager.d",
+    "object": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/NetworkManager.swift.o",
+    "swiftmodule": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/NetworkManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesi.build/NetworkManager.swiftdeps"
+  }
+}

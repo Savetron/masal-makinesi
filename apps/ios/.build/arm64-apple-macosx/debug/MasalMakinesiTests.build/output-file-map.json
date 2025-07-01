@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiTests.build/master.swiftdeps"
+  },
+  "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/Tests/MasalMakinesiTests/MasalMakinesiTests.swift": {
+    "dependencies": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiTests.build/MasalMakinesiTests.d",
+    "object": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiTests.build/MasalMakinesiTests.swift.o",
+    "swiftmodule": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiTests.build/MasalMakinesiTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/uguralcicek/Documents/masal-makinesi/apps/ios/.build/arm64-apple-macosx/debug/MasalMakinesiTests.build/MasalMakinesiTests.swiftdeps"
+  }
+}
