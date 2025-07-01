@@ -10,4 +10,4 @@
     "healthcheckPath": "/api/health",
     "restartPolicyType": "ON_FAILURE"
   }
-} 
+} # Deploy trigger
