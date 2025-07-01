@@ -1,4 +1,9 @@
-import { VercelRequest, VercelResponse } from '@vercel/node';
+import express, { Request, Response } from 'express';
+import cors from 'cors';
+import { validateGeminiConfig } from './lib/gemini.js';
+import { validateSupabaseConfig } from './lib/supabase.js';
+import { authenticateToken } from './lib/auth.js';
+import { createTestToken } from './lib/auth.js';
 import { 
     StoryRequest, 
     StoryResponse, 
@@ -14,37 +19,91 @@ import {
     validateUserRequest,
     isRecoverableError 
 } from '@masal-makinesi/prompts';
+import { createGeminiClient } from './lib/gemini.js';
+import { createSupabaseService } from './lib/supabase.js';
 
-import { authenticateToken, AuthPayload } from '../lib/auth.js';
-import { createGeminiClient, GeminiClient } from '../lib/gemini.js';
-import { createSupabaseService, SupabaseService } from '../lib/supabase.js';
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-/**
- * Main Story Generation API Endpoint
- * POST /api/story
- */
-export default async function handler(req: VercelRequest, res: VercelResponse) {
-    // CORS headers
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+// Middleware
+app.use(cors());
+app.use(express.json());
 
-    if (req.method === 'OPTIONS') {
-        return res.status(200).end();
+// Health Check
+app.get('/api/health', (req: Request, res: Response) => {
+    try {
+        const checks = {
+            gemini: validateGeminiConfig(),
+            supabase: validateSupabaseConfig(),
+            timestamp: new Date().toISOString(),
+        };
+
+        const allHealthy = Object.values(checks).every(check => 
+            typeof check === 'boolean' ? check : true
+        );
+
+        return res.status(allHealthy ? 200 : 503).json({
+            success: allHealthy,
+            checks,
+            status: allHealthy ? 'healthy' : 'degraded',
+        });
+    } catch (error: any) {
+        return res.status(500).json({
+            success: false,
+            error: 'Health check failed',
+            details: process.env.NODE_ENV === 'development' ? error.message : undefined,
+        });
     }
+});
 
-    if (req.method !== 'POST') {
-        return res.status(405).json({ 
+// Test Token (Development only)
+app.post('/api/test-token', (req: Request, res: Response) => {
+    // Only allow in development
+    if (process.env.NODE_ENV === 'production') {
+        return res.status(404).json({ 
             success: false, 
-            error: 'Method not allowed' 
+            error: 'Not found' 
         });
     }
 
+    try {
+        const { userId = 'test-user', email = 'test@example.com' } = req.body || {};
+        const token = createTestToken(userId, email);
+
+        return res.status(200).json({
+            success: true,
+            token,
+            userId,
+            email,
+            expiresIn: '24h',
+            note: 'This is a development-only endpoint',
+        });
+    } catch (error: any) {
+        return res.status(500).json({
+            success: false,
+            error: 'Token generation failed',
+            details: error.message,
+        });
+    }
+});
+
+// Story Generation
+app.post('/api/story', async (req: Request, res: Response) => {
     const startTime = Date.now();
 
     try {
         // Step 1: Authenticate user
-        const authPayload = authenticateToken(req);
+        const authHeader = req.headers.authorization;
+        if (!authHeader) {
+            return res.status(401).json({
+                success: false,
+                error: 'Authentication required',
+            });
+        }
+
+        const token = authHeader.replace('Bearer ', '');
+        const authPayload = authenticateToken({ headers: { authorization: authHeader } } as any);
+        
         if (!authPayload) {
             return res.status(401).json({
                 success: false,
@@ -81,7 +140,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         const supabase = createSupabaseService();
         const storyCount = await supabase.getUserStoryCount(authPayload.userId);
         
-        if (storyCount >= 10) { // 10 stories per day limit
+        if (storyCount >= 10) {
             return res.status(429).json({
                 success: false,
                 error: 'Daily story limit reached',
@@ -127,11 +186,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
             details: process.env.NODE_ENV === 'development' ? error.message : undefined,
         });
     }
-}
+});
 
-/**
- * Generates story with retry logic
- */
+// Helper functions
 async function generateStoryWithRetry(
     request: StoryRequest
 ): Promise<{ success: boolean; story?: Story; metadata?: StoryMetadata; error?: string }> {
@@ -146,7 +203,6 @@ async function generateStoryWithRetry(
 
             const geminiResponse = await gemini.generateStory(prompt, attempt);
             
-            // Validate AI response
             const validation = validateStoryResponse(
                 geminiResponse.content, 
                 request.length
@@ -154,18 +210,18 @@ async function generateStoryWithRetry(
 
             if (validation.valid && validation.data) {
                 const story: Story = {
-                    id: '', // Will be set later
+                    id: '',
                     title: validation.data.title,
                     content: validation.data.content,
                     childName: request.childName,
                     theme: request.theme,
                     length: request.length,
                     wordCount: validation.data.wordCount,
-                    createdAt: '', // Will be set later
+                    createdAt: '',
                 };
 
                 const metadata: StoryMetadata = {
-                    generationTime: 0, // Will be calculated later
+                    generationTime: 0,
                     model: 'gemini-pro',
                     safetyScore: calculateSafetyScore(geminiResponse.safetyRatings),
                     language: validation.data.language,
@@ -177,7 +233,7 @@ async function generateStoryWithRetry(
                 lastError = validation.errors.map(e => e.message).join(', ');
                 
                 if (!isRecoverableError(validation.errors)) {
-                    break; // Don't retry if error is not recoverable
+                    break;
                 }
             }
         } catch (error: any) {
@@ -192,24 +248,47 @@ async function generateStoryWithRetry(
     };
 }
 
-/**
- * Calculates safety score from Gemini safety ratings
- */
 function calculateSafetyScore(safetyRatings: any[]): number {
     if (!safetyRatings || safetyRatings.length === 0) {
-        return 0.8; // Default safe score
+        return 0.8;
     }
 
-    const safeCategories = safetyRatings.filter(
-        rating => rating.probability === 'NEGLIGIBLE' || rating.probability === 'LOW'
-    ).length;
+    let totalScore = 0;
+    let validRatings = 0;
 
-    return safeCategories / safetyRatings.length;
+    for (const rating of safetyRatings) {
+        if (rating.probability && typeof rating.probability === 'string') {
+            const prob = rating.probability.toLowerCase();
+            let score = 1.0;
+            
+            if (prob === 'high') score = 0.2;
+            else if (prob === 'medium') score = 0.6;
+            else if (prob === 'low') score = 0.9;
+            else if (prob === 'negligible') score = 1.0;
+            
+            totalScore += score;
+            validRatings++;
+        }
+    }
+
+    return validRatings > 0 ? totalScore / validRatings : 0.8;
 }
 
-/**
- * Generates unique story ID
- */
 function generateStoryId(): string {
     return `story_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-} 
+}
+
+// 404 handler
+app.use('*', (req: Request, res: Response) => {
+    res.status(404).json({
+        success: false,
+        error: 'Not found',
+        path: req.originalUrl
+    });
+});
+
+// Start server
+app.listen(PORT, () => {
+    console.log(`🚀 Masal Makinesi API running on port ${PORT}`);
+    console.log(`📊 Health check: http://localhost:${PORT}/api/health`);
+}); 

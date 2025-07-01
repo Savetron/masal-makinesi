@@ -2,7 +2,8 @@
   "name": "@masal-makinesi/prompts",
   "version": "1.0.0",
   "description": "Prompt templates and guard rules",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "eslint --ignore-pattern 'dist' '**/*.{ts,tsx}'",

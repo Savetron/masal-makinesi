@@ -1,5 +1,4 @@
 import jwt from 'jsonwebtoken';
-import { VercelRequest } from '@vercel/node';
 
 export interface AuthPayload {
     userId: string;
@@ -8,10 +7,16 @@ export interface AuthPayload {
     exp: number;
 }
 
+interface RequestWithAuth {
+    headers: {
+        authorization?: string;
+    };
+}
+
 /**
  * JWT Authentication Middleware
  */
-export function authenticateToken(request: VercelRequest): AuthPayload | null {
+export function authenticateToken(request: RequestWithAuth): AuthPayload | null {
     const authHeader = request.headers.authorization;
     const token = authHeader && authHeader.split(' ')[1]; // Bearer TOKEN
 
@@ -66,6 +71,6 @@ export function validateTokenFormat(token: string): boolean {
 /**
  * Extracts user info from request
  */
-export function extractUserInfo(request: VercelRequest): AuthPayload | null {
+export function extractUserInfo(request: RequestWithAuth): AuthPayload | null {
     return authenticateToken(request);
 } 

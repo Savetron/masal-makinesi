@@ -1,6 +1,6 @@
 # API - Masal Makinesi
 
-Vercel Edge Functions for story generation API.
+Express API for story generation deployed on Railway.
 
 ## Endpoints
 

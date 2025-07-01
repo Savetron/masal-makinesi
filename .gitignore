@@ -49,3 +49,4 @@ apps/ios/*.xcodeproj/project.xcworkspace/xcuserdata/
 
 # Swift Package Manager
 .swiftpm/ 
+.vercel

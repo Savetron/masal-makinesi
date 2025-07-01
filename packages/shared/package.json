@@ -2,7 +2,8 @@
   "name": "@masal-makinesi/shared",
   "version": "1.0.0",
   "description": "Shared types for TypeScript and Swift",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "eslint --ignore-pattern 'dist' '**/*.{ts,tsx}'",

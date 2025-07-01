@@ -1,17 +1,21 @@
 {
   "name": "@masal-makinesi/api",
   "version": "1.0.0",
-  "description": "Vercel Edge Functions for Masal Makinesi",
-  "main": "index.ts",
+  "description": "Node.js API for Masal Makinesi",
+  "main": "dist/server.js",
   "scripts": {
-    "dev": "vercel dev",
+    "dev": "tsx watch src/server.ts",
     "build": "tsc",
+    "start": "node dist/server.js",
     "lint": "eslint --ignore-pattern 'dist' '**/*.{ts,tsx}'",
     "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@vercel/node": "^3.0.0",
+    "express": "^4.18.0",
+    "cors": "^2.8.5",
     "@masal-makinesi/shared": "workspace:*",
     "@masal-makinesi/prompts": "workspace:*",
     "@supabase/supabase-js": "^2.38.0",
@@ -21,7 +25,13 @@
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
+    "@types/express": "^4.17.0",
+    "@types/cors": "^2.8.0",
     "@types/jsonwebtoken": "^9.0.5",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "msw": "^2.0.0"
   }
 } 

@@ -8,7 +8,7 @@ Purpose: Give Cursor AI clear, linear instructions & code standards so it can au
 
 masal-makinesi/
 ├── apps/
-│   ├── api/                # Vercel Edge Functions (TypeScript)
+│   ├── api/                # Railway Express API (TypeScript)
 │   └── ios/                # SwiftUI iOS target
 ├── packages/
 │   ├── prompts/            # Prompt templates & guard rules (TS)
@@ -27,7 +27,7 @@ Backend	TypeScript ES2023	eslint@latest, 4‑space indent	Vitest, 90%+ critical
 iOS	Swift 5.9	swiftformat –swiftversion 5.9 + swiftlint	XCTest, 60%+ VM coverage
 
 	•	Commit style: Conventional Commits (feat: api story route).
-	•	Branching: main → prod, dev → staging, feature branches PR’d to dev.
+	•	Branching: main → prod, dev → staging, feature branches PR'd to dev.
 
 ⸻
 
@@ -39,7 +39,7 @@ SUPABASE_URL=
 SUPABASE_ANON_KEY=
 JWT_SECRET=
 
-Cursor: never commit real keys; use Vercel + Xcode Schemes.
+Cursor: never commit real keys; use Railway + Xcode Schemes.
 
 ⸻
 
@@ -50,7 +50,7 @@ M1	Monorepo Setup	init git, add pnpm workspace; Swift package manifest; CI lint 
 M2	prompts/	storyPrompt.ts with templating fn; guard.ts block‑list + regex
 M3	API /story	Edge handler: JWT auth → build prompt → call Gemini → parse JSON → store Supabase → return 200 JSON
 M4	API tests	Vitest suites: happy path, guard fail, moderation fail
-M5	Deploy	Vercel project link, set env vars, smoke test curl
+M5	Deploy	Railway project link, set env vars, smoke test curl
 M6	iOS networking	NetworkManager (async/await) + JWT refresh; model structs mirrored from shared types
 M7	SwiftUI Core Views	OnboardingWizard → StoryListView → StoryDetailView (TTS)
 M8	State & Storage	Combine‑based StoryStore (Supabase fetch + CoreData cache)
@@ -87,7 +87,7 @@ Cursor tip: keep guard util in packages/prompts/validate.ts for reuse.
 	•	GitHub Actions
 	•	lint.yml → eslint + swiftlint.
 	•	test.yml → vitest + xcodebuild test.
-	•	deploy_api.yml → on main→ Vercel deploy.
+	•	deploy_api.yml → on main→ Railway deploy.
 	•	Fastlane lanes: beta, release; auto‑increment build.
 
 ⸻
@@ -106,4 +106,6 @@ Cursor tip: keep guard util in packages/prompts/validate.ts for reuse.
 
 ✅ M3 COMPLETED: API /story endpoint with JWT auth, Gemini AI integration, Supabase storage, and complete environment setup.
 
-Now playing: M4. API tests - Vitest suites for happy path and error scenarios 🧪
+✅ M4 COMPLETED: API tests with comprehensive Vitest suites covering authentication, validation, content safety, and error scenarios. 35 tests passing with full coverage.
+
+Now playing: M5. Deploy - Railway project link, set env vars, smoke test curl 🚀
