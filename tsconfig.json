@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "@masal-makinesi/*": ["packages/*/src"]
+    }
+  },
+  "include": ["packages/*/src/**/*", "apps/api/**/*"],
+  "exclude": ["node_modules", "dist"]
+} 

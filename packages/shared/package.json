@@ -1,0 +1,16 @@
+{
+  "name": "@masal-makinesi/shared",
+  "version": "1.0.0",
+  "description": "Shared types for TypeScript and Swift",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+} 

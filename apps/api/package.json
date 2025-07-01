@@ -1,0 +1,20 @@
+{
+  "name": "@masal-makinesi/api",
+  "version": "1.0.0",
+  "description": "Vercel Edge Functions for Masal Makinesi",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@vercel/node": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+} 
