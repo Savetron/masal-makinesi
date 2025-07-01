@@ -102,4 +102,6 @@ Cursor tip: keep guard util in packages/prompts/validate.ts for reuse.
 
 ✅ M1 COMPLETED: Monorepo initialized with pnpm workspace, Swift Package.swift, and CI lint pipeline.
 
-Now playing: M2. Prompts package development 🎯
+✅ M2 COMPLETED: Prompts package with template engine, content guard, and validation system.
+
+Now playing: M3. API /story endpoint - JWT auth → Gemini → Supabase 🚀
