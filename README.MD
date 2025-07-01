@@ -104,4 +104,6 @@ Cursor tip: keep guard util in packages/prompts/validate.ts for reuse.
 
 ✅ M2 COMPLETED: Prompts package with template engine, content guard, and validation system.
 
-Now playing: M3. API /story endpoint - JWT auth → Gemini → Supabase 🚀
+✅ M3 COMPLETED: API /story endpoint with JWT auth, Gemini AI integration, Supabase storage, and complete environment setup.
+
+Now playing: M4. API tests - Vitest suites for happy path and error scenarios 🧪
