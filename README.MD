@@ -100,4 +100,6 @@ Cursor tip: keep guard util in packages/prompts/validate.ts for reuse.
 
 ⸻
 
-Now playing: M1. Cursor, scaffold repo tree & CI, commit as chore: init monorepo. 🚀
+✅ M1 COMPLETED: Monorepo initialized with pnpm workspace, Swift Package.swift, and CI lint pipeline.
+
+Now playing: M2. Prompts package development 🎯

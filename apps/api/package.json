@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vercel dev",
     "build": "tsc",
-    "lint": "eslint . --ext .ts,.tsx",
+    "lint": "eslint --ignore-pattern 'dist' '**/*.{ts,tsx}'",
     "test": "vitest",
     "clean": "rm -rf dist"
   },
